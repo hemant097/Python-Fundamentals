@@ -34,6 +34,7 @@ try:
         content = csv.reader(file)
         for row in content:
             print(row)
+            print(row[2])
 except FileNotFoundError:
     print("File not found")
 except PermissionError:
