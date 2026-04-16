@@ -1,0 +1,9 @@
+{
+    "name": "Carl Jung",
+    "age": 30,
+    "job": "Software Engineer",
+    "department": {
+        "name": "Core Engineer",
+        "Location": "Bengaluru"
+    }
+}
