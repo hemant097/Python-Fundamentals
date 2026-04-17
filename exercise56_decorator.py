@@ -11,13 +11,15 @@ def add_sprinkles(func):
 
 
 # if we do not add the wrapper method, we will end up calling get_ice_cream(), as soon as we apply the decorator
-#  and we do not want such behaviour, thus wrapper ensures, that only add_sprinkles() when get_ice_cream is called
+#  ,and we don't want such behaviour,
+#  Thus wrapper ensures, that only add_sprinkles() when get_ice_cream is called
 
 @add_sprinkles
 def get_ice_cream():
     print("Here is your Ice cream 🍧🍨")
 
-# The above line is equivalent to get_ice_cream = add_sprinkles(get_ice_cream)
+# The above line is equivalent to
+#                   get_ice_cream = add_sprinkles(get_ice_cream)
 # that means, first add_sprinkles first line get printed
 #             , second get_ice_cream is called
 #             , third add_sprinkles third line gets printed
