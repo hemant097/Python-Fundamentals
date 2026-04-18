@@ -17,6 +17,7 @@ def set_alarm(alarm_time):
             pygame.mixer.music.load(sound_file)
             pygame.mixer.music.play()
 
+            #Keeps the program running until the audio file is playing
             while pygame.mixer.music.get_busy():
                 time.sleep(1)
 

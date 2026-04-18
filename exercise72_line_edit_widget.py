@@ -29,10 +29,10 @@ class MainWindow(QMainWindow):
         print(f"Hello {text}")
 
 def main():
-    app = QApplication(sys.argv) #for any command line arguments
+    app = QApplication(sys.argv)
     window = MainWindow()
-    window.show() #else window closes within milliseconds
-    sys.exit(app.exec_()) #execute method (.exec_ different from .exec
+    window.show()
+    sys.exit(app.exec_())
 
 if __name__ == "__main__":
     main()
