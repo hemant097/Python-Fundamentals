@@ -6,9 +6,9 @@ import threading
 import time
 
 
-def walk_dog(first):
+def walk_dog(first, second):
     time.sleep(8)
-    print(f"You finish walking {first}")
+    print(f"You finish walking {first}, and {second}")
 
 def take_out_trash():
     time.sleep(2)
@@ -23,7 +23,7 @@ def get_mail():
 # take_out_trash()
 # get_mail()
 
-chore1 = threading.Thread(target=walk_dog,args=("Simba"))
+chore1 = threading.Thread(target=walk_dog,args=("Simba","Babita"))
 chore1.start()
 
 chore2 = threading.Thread(target=take_out_trash)
