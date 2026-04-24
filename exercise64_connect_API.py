@@ -14,7 +14,7 @@ def get_pokemon_info(name):
     else:
         return f"failed to retrieve pokemon info {response.status_code}"
 
-pokemon_name="typhlosion"
+pokemon_name="pikachu"
 
 pokemon_info = get_pokemon_info(pokemon_name)
 
