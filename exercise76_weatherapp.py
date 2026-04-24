@@ -6,7 +6,7 @@ from PyQt5.QtGui import QPixmap
 from PyQt5.QtWidgets import QApplication, QWidget, QLabel, QLineEdit, QPushButton, QVBoxLayout
 from requests import HTTPError, RequestException, TooManyRedirects
 
-API_KEY = "8f9edd3a1d6def98c8e4c1dba8e22536"
+from test_file.api_key import API_KEY
 
 class WeatherApp(QWidget):
     def __init__(self):
@@ -63,6 +63,11 @@ class WeatherApp(QWidget):
             }
             QLabel#temperature_label{
                 font-size:75px;
+            }
+            
+            QLabel#emoji_label{
+                font-size:100px;
+                font-family:Segoe UI emoji;
             }
             
             QLabel#description_label{
